@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";  
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    display: block;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  float: left;
+}
+
+.container{
+    display: block;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: auto;
+}
+logo { 
+    background-color: yellow;
+    border: solid black 1pt;
+    width: 30.00%;
+    height: 10pt; 
+  vertical-align: text-middle;
+}
+
+  nav1 {
+    background-color: yellow; 
+    border: solid black 1pt;
+    height: 10pt;
+    width: 45.00%;
+  vertical-align: text-middle;
+}
+
+nav2 {
+    background-color: yellow;
+    border: solid black 1pt;
+    height: 10pt;
+    width: 25.00%;
+  vertical-align: text-middle;
+}
+hero {
+    border: solid black 1pt;
+    background-color: white; 
+    width: 100%;
+    height: 350pt;
+  vertical-align: text-bottom;
+}
+
+minorhero {
+    border: solid black 1pt;
+    background-color: white;
+    width: 33.33%;
+    height: 200pt;
+  text-align: center;
+  float: left;
+}
+call {
+    border: solid black 1pt;
+    background-color:white; 
+    width: 100%;
+    height: 150pt;
+   text-align: right
+     ;
+}
+discounts {
+    border: solid black 1pt;
+    background-color: white; 
+    width: 25%;
+    height: 50pt;
+  float: left;
+   text-align: center;
+}
+bottomnav {
+    border: solid black 1pt;
+    background-color: white; 
+    width: 16.66%;
+    height: 200pt;
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1400px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+  navigation {
+      display:none;
+    }
+}
