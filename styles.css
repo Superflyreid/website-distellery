@@ -50,30 +50,49 @@ nav2 {
 }
 hero {
   border: solid black 1pt;
-  background-color: white;
+  background-color: gray;
   width: 100%;
   height: 350pt;
   vertical-align: text-bottom;
 }
 
-minorhero {
+minorhero1 {
   border: solid black 1pt;
-  background-color: white;
-  width: 33.33%;
+  background-color: gray;
+  height: 200pt;
+  width: 100%;
+	order: 1;
+  text-align: center;
+  float: left;
+}
+minorhero2 {
+  border: solid black 1pt;
+  background-color: gray;
+  width: 100%;
+	order: 2;
+  height: 200pt;
+  text-align: center;
+  float: left;
+}
+minorhero3 {
+  border: solid black 1pt;
+  background-color: gray;
+  width: 100%;
+	order: 3;
   height: 200pt;
   text-align: center;
   float: left;
 }
 call {
   border: solid black 1pt;
-  background-color: white;
+  background-color: gray;
   width: 100%;
   height: 150pt;
   text-align: right;
 }
 discounts {
   border: solid black 1pt;
-  background-color: white;
+  background-color: yellow;
   width: 25%;
   height: 50pt;
   float: left;
@@ -81,23 +100,33 @@ discounts {
 }
 bottomnav {
   border: solid black 1pt;
-  background-color: white;
-  width: 16.66%;
+  background-color: gray;
+  width: 100%;
   height: 200pt;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and  (min-width: 768px) {
   .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1400px;
-  }
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	minorhero1 {
+		width: 33.33%;
+	}
+	
+	minorhero2 {
+		width: 33.33%;
+	}
+	minorhero3 {
+		width: 33.33%;
+	}
+bottomnav {
+  width: 16.66%;
+  height: 200pt;
+  
 }
-
-@media screen and (min-width: 768px) {
-  navigation {
-    display: none;
-  }
-}
+@media only screen and (min-width: 1024px){ 
+ 	
+} 
